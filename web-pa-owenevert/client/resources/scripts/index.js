@@ -29,7 +29,7 @@ function handleNewClick()
     makeEditable();
     hideButtons();
     blankFields();
-    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" oneclick=\"handleNewSave()\">Save/button>"
+    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" oneclick=\"handleNewSave()\">Save</button>"
     buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" oneclick=\"handleCancelSave()\">Cancel</button>"
     document.getElementById("saveButton").innerHTML = buttonHtml;
     document.getElementById("saveButton").style.display = "inline-block";
@@ -103,7 +103,7 @@ function makeEditable()
 {
     document.getElementById("bookTitle").readOnly=false;
     document.getElementById("bookAuthor").readOnly=false;
-    document.getElementById("bookGnere").readOnly=false;
+    document.getElementById("bookGenre").readOnly=false;
     document.getElementById("bookAvlb").readOnly=false;
     document.getElementById("bookIsbn").readOnly=false;
     document.getElementById("bookLength").readOnly=false;
@@ -114,7 +114,7 @@ function blankFields()
 {
     document.getElementById("bookTitle").value="";
     document.getElementById("bookAuthor").value="";
-    document.getElementById("bookGnere").value="";
+    document.getElementById("bookGenre").value="";
     document.getElementById("bookAvlb").value="";
     document.getElementById("bookIsbn").value="";
     document.getElementById("bookLength").value="";
